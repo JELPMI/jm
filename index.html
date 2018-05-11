@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="res/css/bootstrap.min.css">
     <link rel="stylesheet" href="res/css/custom/main.css">
+    <link rel="stylesheet" href="res/css/custom/d-system.css">
     <link rel="stylesheet" href="res/css/animate.css">
     <script type="text/javascript" src="res/js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="res/js/typed.min.js"></script>
@@ -103,6 +104,20 @@
 		</noscript>
 		<!-- End Facebook Pixel Code -->
 		
+		<script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places" type="text/javascript"></script>
+		<script type="text/javascript">
+			function initialize() {
+				var input = document.getElementById('searchTextField');
+				var options = {
+					types: ['(regions)'],
+					componentRestrictions: {country: 'mx'}
+				};
+
+				autocomplete = new google.maps.places.Autocomplete(input, options);
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		
   </head>
 
   <body onload="mixpanel.track('Index visited');">
@@ -183,88 +198,101 @@
         </div>
       </div>
     </nav>
-
-    <div class="hero d-flex align-items-center justify-content-center">
-      <div class="container" style="margin-top: -150px;">
-        <div class="row" style="margin-bottom: 20px;">
-          <div class="col-sm" style="text-align: center;">
-            <h1 class="font-thin">Tu servicio de limpieza</h1>
-            <h1 class="font-black" id="typed"></h1>
-          </div>
-        </div>
-        <div class="row" style="margin-bottom: 20px;">
-          <div class="col-sm d-flex justify-content-center">
-            <a href="keepers.html">
-              <button type="button" name="button" class="btn btn-cta bg-pink margin-right-16" onclick="mixpanel.track('Keepers hero');">Quiero trabajar</button>
-            </a>
-            <a href="http://servicios.jelpmi.mx">
-            	<button type="button" name="button" class="btn btn-cta bg-purple" onclick="mixpanel.track('Services hero');">Quiero un servicio</button>
-						</a>	
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm d-flex justify-content-center">
-           	<a href="https://play.google.com/store/apps/details?id=com.luillox.jelpmi&hl=es_419">
-           		<img src="res/assets/img/stores/play.png" class="btn-store" alt="Google Play Store">
-           	</a>
-           	<a href="https://itunes.apple.com/mx/app/jelpmi/id1105721186?mt=8">
-            	<img src="res/assets/img/stores/app.png" class="btn-store" alt="App Store iOS">
-						</a>
-          </div>
-        </div>
-      </div>
+    
+    <div class="container" style="margin-top: 80px;" >
+			<div class="row">
+				<div class="col-md-12" style="margin-bottom: 40px;">
+					<div class="hero-div" style="background: #E8E8E8; min-height: 480px; background-image: url(res/assets/img/sala.jpg); background-size: cover; background-position: center; color: white;">
+						<div class="transparent-gradient" style="padding: 32px; min-height: 480px; display: flex;
+    -webkit-flex-wrap: wrap; flex-wrap: wrap; -webkit-align-content: center; align-content: space-between;">
+							<div style="width: 100%;">
+								<h1>
+									Encuentra expertos en limpieza <br> cerca de ti.
+								</h1>
+								<br>
+								<form action="http://servicios.jelpmi.mx">
+									<input type="text" placeholder="Escribe tu colonia" class="form-txt" style="width: 296px;" id="searchTextField" name="neighborhood">
+									<input type="submit" value="Buscar" class="btn-float" style="width: 160px;">
+								</form>
+							</div>
+							<div class="quote" style="font-size: 32px;">
+								Encuentra en quien confiar.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Somos la opción más chida<span>.</span></h2>
+					<br>
+					<div class="tile-row">
+						<div class="tile">
+							<div class="image" style="background-image: url(res/assets/img/door-open.png)"></div>
+							<div class="description">Quiero trabajar!!</div>
+						</div>
+						<div class="tile">
+							<div class="image" style="background-image: url(res/assets/img/plant.jpg)"></div>
+							<div class="description">Servicio para mi depa.</div>
+						</div>
+						<div class="tile">
+							<div class="image" style="background-image: url(res/assets/img/photos/ph-office-1.jpg)"></div>
+							<div class="description">Servicios para oficina.</div>
+						</div>
+						<div class="tile">
+							<div class="image" style="background-image: url(res/assets/img/photos/ph-condo-1.jpg)"></div>
+							<div class="description">Administro un edificio.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 d-flex justify-content-between press-logos">
+					<a href="http://www.reforma.com/aplicacioneslibre/articulo/default.aspx?id=813843&md5=acf74f2800c08f9fea7a269c95956816&ta=0dfdbac11765226904c16cb9ad1b2efe&lcmd5=1953be67ca081ee3b7c7affe61197d5a" target="_blank" class="wow fadeIn" data-wow-delay="0.1s">
+						<img src="res/assets/img/logos/press-logo-reforma.png" style="width: 170px" alt="Periódico Reforma">
+					</a>
+					<a href="https://youtu.be/MZiQjzn1bOI" target="_blank" class="wow fadeIn" data-wow-delay="0.2s">
+						<img src="res/assets/img/logos/press-logo-sony.png" style="width: 170px" alt="Canal Sony Televisión">
+					</a>
+					<a href="http://www.eluniversal.com.mx/articulo/metropoli/df/2016/02/24/limpieza-domestica-al-alcance-de-una-app" target="_blank" class="wow fadeIn" data-wow-delay="0.3s">
+						<img src="res/assets/img/logos/press-logo-universal.png" style="width: 170px" alt="Periódico El Universal">
+					</a>
+					<a href="http://www.milenio.com/negocios/emprender-en-mexico/melina_cruz-jelpmi-negocio-mexico_busca_pasion_emprender-milenio_noticias_0_1050495188.html" target="_blank" class="wow fadeIn" data-wow-delay="0.4s">
+						<img src="res/assets/img/logos/press-logo-milenio.png" style="width: 170px" alt="Milenio Diario">
+					</a>
+					<a href="http://www.imagenradio.com.mx/gabriela-ferriz/conoce-jelpmi-el-nuevo-servicio-de-limpieza" target="_blank" class="wow fadeIn" data-wow-delay="0.5s">
+						<img src="res/assets/img/logos/press-logo-imagen.png" style="width: 170px" alt="Grupo Imagen Multimedia">
+					</a>
+					<a href="https://www.entrepreneur.com/article/311983" target="_blank" class="wow fadeIn" data-wow-delay="0.5s">
+						<img src="res/assets/img/logos/press-logo-entrepeneur.png" style="width: 170px" alt="Grupo Imagen Multimedia">
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div style="height: 320px; background: #E8E8E8; background-image: url(res/assets/img/photos/ph-capac-1.jpg); background-size: cover;">
+					</div>
+					<div style="padding: 20px 0px;">
+						<h2 class="font-black">Sólo los mejores<span>.</span></h2>
+						<p>
+							Los keepers son profesionales independientes que, para asegurar la calidad y seguridad esperada, pasan por distintos filtros de preselección antes de prestar sus servicios en la plataforma.
+						</p>
+						<a href="keepers.html" onclick="mixpanel.track('View more keepers');">Ver más</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div style="height: 320px; background: #E8E8E8; background-image: url(res/assets/img/photos/ph-puppy.jpg); background-size: cover;">
+					</div>
+					<div style="padding: 20px 0px;">
+						<h2 class="font-black">Tu hogar está protegido<span>.</span></h2>
+						<p>
+							Al solicitar servicios por medio de Jelp mi, tu domicilio está asegurado, en caso de daños, hasta por un millón de pesos.
+						</p>
+						<a href="perks.html" onclick="mixpanel.track('View more perks');">Ver más</a>
+					</div>
+				</div>
+			</div>
     </div>
-
-    <div>
-      <div id="press-logos" class="container press-logos d-flex justify-content-between align-content-center" style="height: 84px;">
-        <a href="http://www.reforma.com/aplicacioneslibre/articulo/default.aspx?id=813843&md5=acf74f2800c08f9fea7a269c95956816&ta=0dfdbac11765226904c16cb9ad1b2efe&lcmd5=1953be67ca081ee3b7c7affe61197d5a" target="_blank" class="wow fadeInDown" data-wow-delay="0.1s">
-          <img src="res/assets/img/logos/press-logo-reforma.png" style="width: 170px" alt="Periódico Reforma">
-        </a>
-        <a href="https://youtu.be/MZiQjzn1bOI" target="_blank" class="wow fadeInDown" data-wow-delay="0.2s">
-          <img src="res/assets/img/logos/press-logo-sony.png" style="width: 170px" alt="Canal Sony Televisión">
-        </a>
-        <a href="http://www.eluniversal.com.mx/articulo/metropoli/df/2016/02/24/limpieza-domestica-al-alcance-de-una-app" target="_blank" class="wow fadeInDown" data-wow-delay="0.3s">
-          <img src="res/assets/img/logos/press-logo-universal.png" style="width: 170px" alt="Periódico El Universal">
-        </a>
-        <a href="http://www.milenio.com/negocios/emprender-en-mexico/melina_cruz-jelpmi-negocio-mexico_busca_pasion_emprender-milenio_noticias_0_1050495188.html" target="_blank" class="wow fadeInDown" data-wow-delay="0.4s">
-          <img src="res/assets/img/logos/press-logo-milenio.png" style="width: 170px" alt="Milenio Diario">
-        </a>
-        <a href="http://www.imagenradio.com.mx/gabriela-ferriz/conoce-jelpmi-el-nuevo-servicio-de-limpieza" target="_blank" class="wow fadeInDown" data-wow-delay="0.5s">
-          <img src="res/assets/img/logos/press-logo-imagen.png" style="width: 170px" alt="Grupo Imagen Multimedia">
-        </a>
-        <a href="https://www.entrepreneur.com/article/311983" target="_blank" class="wow fadeInDown" data-wow-delay="0.5s">
-          <img src="res/assets/img/logos/press-logo-entrepeneur.png" style="width: 170px" alt="Grupo Imagen Multimedia">
-        </a>
-      </div>
-
-      <div class="container-fluid" style="background: #fafafa; margin-top: 76px;">
-        <div class="row" style="min-height: 400px;">
-          <div class="col-md-6 photo-item" style="background-image: url('res/assets/img/photos/ph-capac-1.jpg');">
-          </div>
-          <div class="col-md-6 solid-10 d-flex justify-content-center align-items-center">
-            <div class="wow fadeIn info-item">
-              <h2 class="font-black">Sólo los mejores<span>.</span></h2>
-              <p>
-                Los keepers son profesionales independientes que, para asegurar la calidad y seguridad esperada, pasan por distintos filtros de preselección antes de prestar sus servicios en la plataforma.
-              </p>
-              <a href="keepers.html" onclick="mixpanel.track('View more keepers');">Ver más</a>
-            </div>
-          </div>
-        </div>
-        <div class="row" style="min-height: 400px;">
-          <div class="col-md-6 solid-10 d-flex align-items-center justify-content-center">
-            <div class="wow fadeIn info-item">
-              <h2 class="font-black">Tu hogar está protegido<span>.</span></h2>
-              <p>
-                Al solicitar servicios por medio de Jelp mi, tu domicilio está asegurado, en caso de daños, hasta por un millón de pesos.
-              </p>
-              <a href="perks.html" onclick="mixpanel.track('View more perks');">Ver más</a>
-            </div>
-          </div>
-          <div class="col-md-6 photo-item" style="background-image: url('res/assets/img/photos/ph-puppy.jpg');">
-          </div>
-        </div>
-      </div>
 
       <div class="container" style="background: white;">
         <div class="row" style="min-height: 100vh;">
@@ -280,7 +308,7 @@
                 Agenda tu servicio <b>desde $80 por hora*</b> ó si lo requieres solicita un <b>servicio exprés con sólo dos horas de anticipación**</b>.
               </p>
               <a href="http://servicios.jelpmi.mx">
-                <button type="button" name="button" class="btn-cta bg-purple" onclick="mixpanel.track('Services detail');">Solicita tu servicio ahora</button>
+                <button type="button" name="button" class="btn-cta cta-main" onclick="mixpanel.track('Services detail');">Solicita tu servicio ahora</button>
               </a>
               <br><br>
               <p class="txt-small color-text-disabled">
@@ -304,7 +332,7 @@
                 Con miles de clientes en las principales ciudades de México, los keepers han logrado aumentar sus ingresos hasta 5 veces y alcanzar sus metas personales, familiares y profesionales.
               </p>
               <a href="keepers.html">
-                <button type="button" name="button" class="btn btn-cta bg-pink" onclick="mixpanel.track('keepers bottom');">Quiero trabajar</button>
+                <button type="button" name="button" class="btn-cta cta-alt" onclick="mixpanel.track('keepers bottom');">Quiero trabajar</button>
               </a>
             </div>
           </div>
