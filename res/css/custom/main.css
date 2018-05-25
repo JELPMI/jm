@@ -788,6 +788,7 @@ label{
 	align-items: center;
 	justify-content: center;
 	padding: 8px;
+	text-decoration: none !important;
 }
 
 .transparent-gradient{
@@ -903,6 +904,10 @@ label{
 	.keepers-hero{
 		background-position: -300px -100px !important;
 	}
+	
+	#doodle{
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 991px) {
@@ -928,4 +933,8 @@ label{
 		.keepers-moto{
 			padding-top: 400px;
 		}
+	
+	.non-important{
+		display: none;
+	}
 }
