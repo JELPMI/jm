@@ -18,7 +18,7 @@
     <script type="text/javascript" src="res/js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="res/js/typed.min.js"></script>
     <script type="text/javascript" src="res/js/bootstrap.min.js"></script>
-    
+
     <!-- Start Alexa Certify Javascript -->
     <script type="text/javascript">
       _atrk_opts = { atrk_acct:"Jhx0p1IWhd10Y8", domain:"jelpmi.mx",dynamic: true};
@@ -26,7 +26,7 @@
     </script>
     <noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=Jhx0p1IWhd10Y8" style="display:none" height="1" width="1" alt="" /></noscript>
     <!-- End Alexa Certify Javascript -->
-    
+
     <!-- Google analytics -->
     <script>
 			var _gaq = _gaq || [];
@@ -42,7 +42,7 @@
 			})();
 		</script>
    <!-- finish Google analytics -->
-    
+
     <!-- Linkedin script -->
 		<script type="text/javascript">
 			_linkedin_data_partner_id = "53597";
@@ -69,7 +69,7 @@
 	mixpanel.init("a2cc482f9ce47208919bd16343605dca");
 		</script>
 		<!-- end Mixpanel -->
-		
+
 		<!--LinkedIn script 2-->
 		<script type="text/javascript">
 			_linkedin_data_partner_id = "53597";
@@ -85,7 +85,7 @@
 			<img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=53597&fmt=gif" />
 		</noscript>
 		<!--end LinkedIn script 2-->
-		
+
 		<!-- Facebook Pixel Code -->
 		<script>
 			!function(f,b,e,v,n,t,s)
@@ -96,14 +96,14 @@
 			t.src=v;s=b.getElementsByTagName(e)[0];
 			s.parentNode.insertBefore(t,s)}(window,document,'script',
 			'https://connect.facebook.net/en_US/fbevents.js');
-			 fbq('init', '374461112975868'); 
+			 fbq('init', '374461112975868');
 			fbq('track', 'PageView');
 		</script>
 		<noscript>
 		 <img height="1" width="1" src="https://www.facebook.com/tr?id=374461112975868&ev=PageView&noscript=1"/>
 		</noscript>
 		<!-- End Facebook Pixel Code -->
-		
+
 		<script src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places&key=AIzaSyDQSkVVrZ1BMsG10-44vN0aXJQerFQZkAw" type="text/javascript"></script>
 		<script type="text/javascript">
 			function initialize() {
@@ -117,14 +117,14 @@
 			}
 			google.maps.event.addDomListener(window, 'load', initialize);
 		</script>
-		
+
   </head>
 
   <body onload="mixpanel.track('Index visited');">
 
     <!-- Mobile Menu -->
 		<nav class="navbar fixed-top container space-between navbar-mobile d-flex align-items-start" id="navbar-mobile">
-      <div class="d-flex justify-content-between align-items-center" style="width: 100%; display: flex">
+      <div class="d-flex justify-content-between align-items-center" style="width: 100%;">
         <div id="burger-mobile" onclick="menu(); mixpanel.track('Open burger button');">
           <img src="res/assets/icons/menu.svg" alt="Burger menu" style="width: 40px;" id="burger-btn">
           <img src="res/assets/brand/logo/globo.svg" height="32px" alt="Jelp Mi Logo" id="globo" class="svg logo-img">
@@ -146,11 +146,11 @@
 				<div class="menu-item-main" style="border-right: 3px solid #9032c8;">
 					<a href="http://servicios.jelpmi.mx">Quiero un servicio</a>
 				</div>
-				
+
 				<br>
         <hr style="width: 100%; margin: 48px 0px;">
 				<br>
-				
+
         <div class="menu-item-secondary">
 					<a href="index.html">Home</a>
 				</div>
@@ -198,11 +198,11 @@
         </div>
       </div>
     </nav>
-    
+
     <div class="container" style="margin-top: 80px;" >
 			<div class="row">
 				<div class="col-md-12" style="margin-bottom: 40px;">
-					<div class="hero-div" style="background: #E8E8E8; min-height: 480px; background-image: url(res/assets/img/photos/ph-living.jpg); background-size: cover; background-position: center; color: white;">
+					<div class="hero-content" style="background-image: url(res/assets/img/photos/ph-living-5.jpg); ">
 						<div class="transparent-gradient" style="padding: 32px; min-height: 480px; display: flex;
     -webkit-flex-wrap: wrap; flex-wrap: wrap; -webkit-align-content: center; align-content: space-between;">
 							<div style="width: 100%;">
@@ -210,11 +210,14 @@
 									Encuentra expertos en limpieza <br> cerca de ti.
 								</h1>
 								<br>
-								<form action="http://servicios.jelpmi.mx">
-									<input type="text" placeholder="Escribe tu colonia" class="form-txt" style="width: 296px;" id="searchTextField" name="neighborhood">
-									<input type="submit" value="Buscar" class="btn-float" style="width: 160px;">
-								</form>
-								<img src="res/assets/img/sketch-1.png" alt="sketch drawing" id="doodle">
+								
+								<div style="background-color: white;
+								height: 50px; padding: 2px; border-radius: 4px; display: inline-block;">
+									<form action="http://servicios.jelpmi.mx" method="post">
+										<input type="text" placeholder="Escribe tu colonia" class="form-txt" style="width: 296px;" id="searchTextField" name="neighborhood">
+										<input type="submit" value="Buscar" class="btn-cta cta-alt" style="width: 160px;">
+									</form>
+								</div>
 							</div>
 							<div class="quote" style="font-size: 32px;">
 								Encuentra en quien confiar.
@@ -239,13 +242,13 @@
 								<div class="image" style="background-image: url(res/assets/img/plant.jpg)"></div>
 								<div class="description">Servicio para mi depa.</div>
 							</div>
-						</a>	
+						</a>
 						<a href="offices.html" style="text-decoration: none; color: black;">
 							<div class="tile wow fadeIn non-important" data-wow-delay="0.4s">
 								<div class="image" style="background-image: url(res/assets/img/photos/ph-office-1.jpg)"></div>
 								<div class="description">Servicios para oficina.</div>
 							</div>
-						</a>	
+						</a>
 					</div>
 				</div>
 			</div>
@@ -344,14 +347,13 @@
           </div>
         </div>
       </div>
-    </div>
 
     <div class="footer-custom">
       <div class="container">
         <div class="row">
           <div class="col-md" id="footer-logo">
             <a href="index.html">
-              <img src="res/assets/brand/logo/silver.svg" height="45px" alt="Jelp Mi Logo">
+              <img src="res/assets/brand/logo/silver.svg" height="40px" alt="Jelp Mi Logo">
             </a>
           </div>
           <div class="col-md menu-column">
@@ -399,7 +401,7 @@
             </p>
           </div>
         </div>
-        <div class="row color-text-disabled" style="font-size: 14px;" id="contact-info">
+        <div class="row color-text-disabled" style="font-size: 12px;" id="contact-info">
           <div style="margin-top: 30px; border-bottom: 1px solid #f0f0f0; width: 100%;" class="d-flex justify-content-between">
             <div>¿Necesitas más información? Llama en la CDMX al <a href="tel:70982559">7098-2559</a>. En Guadalajara al <a href="tel:23436162">2343-6162</a>.</div>
             <div>

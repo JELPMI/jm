@@ -6,19 +6,23 @@ function sort(){
   for (var i = 0; i < zones.length; i++) {
     if (zones[i].city == "CDMX" && zones[i].status == "ON") {
       zonesCDMX.push(zones[i].name);
-    } else if (zones[i].city == "GDL" && zones[i].status == "ON") {
+    } else if (zones[i].city == "JAL" && zones[i].status == "ON") {
       zonesGDL.push(zones[i].name);
     } else if(zones[i].city == "EMX" && zones[i].status == "ON"){
       zonesEMX.push(zones[i].name);
     }
   }
+	
+	console.log(zonesGDL);
+	console.log(zonesCDMX);
+	console.log(zonesEMX);
 
   zonesCDMX = zonesCDMX.sort();
   zonesGDL = zonesGDL.sort();
 
   build("Ciudad de México", zonesCDMX);
   build("Estado de México", zonesEMX);
-  build("Guadalajara", zonesGDL);
+  build("Jalisco", zonesGDL);
 }
 
 function build(city, array){

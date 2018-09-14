@@ -25,7 +25,7 @@
     </script>
     <noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=Jhx0p1IWhd10Y8" style="display:none" height="1" width="1" alt="" /></noscript>
     <!-- End Alexa Certify Javascript -->
-    
+
     <!-- Google analytics -->
     <script>
 			var _gaq = _gaq || [];
@@ -41,7 +41,7 @@
 			})();
 		</script>
    <!-- finish Google analytics -->
-    
+
     <!-- Linkedin script -->
 		<script type="text/javascript">
 			_linkedin_data_partner_id = "53597";
@@ -68,7 +68,7 @@
 	mixpanel.init("a2cc482f9ce47208919bd16343605dca");
 		</script>
 		<!-- end Mixpanel -->
-		
+
 		<!-- Facebook Pixel Code -->
 		<script>
 			!function(f,b,e,v,n,t,s)
@@ -79,14 +79,14 @@
 			t.src=v;s=b.getElementsByTagName(e)[0];
 			s.parentNode.insertBefore(t,s)}(window,document,'script',
 			'https://connect.facebook.net/en_US/fbevents.js');
-			 fbq('init', '374461112975868'); 
+			 fbq('init', '374461112975868');
 			fbq('track', 'PageView');
 		</script>
 		<noscript>
 		 <img height="1" width="1" src="https://www.facebook.com/tr?id=374461112975868&ev=PageView&noscript=1"/>
 		</noscript>
 		<!-- End Facebook Pixel Code -->
-		
+
   </head>
   <body onload="mixpanel.track('Keepers visited')">
 
@@ -114,11 +114,11 @@
 				<div class="menu-item-main" style="border-right: 3px solid #9032c8;">
 					Quiero un servicio
 				</div>
-				
+
 				<br>
         <hr style="width: 100%; margin: 48px 0px;">
 				<br>
-				
+
         <div class="menu-item-secondary">
 					<a href="index.html">Home</a>
 				</div>
@@ -166,81 +166,92 @@
         </div>
       </div>
     </nav>
-		
-		<div class="keeper-cover">
-			<div style="width: 100%; min-height: 100%; background-image: 
-			linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-			margin-bottom: 30px;">
-				<div class="container" style="background: ;">
-					<div class="row align-items-center" style="min-height: 100vh; margin-bottom: 40px;">
-						<div class="col-lg-8" style="background: ;">
-							<div style="height: 430px; background: ;"></div>
-							<h1>Comienza a <br> cambiar tu vida<span>.</span></h1>
+
+    <div class="container">
+      <div class="row" style="margin-top: 80px">
+				<div class="col-md-12" style="margin-bottom: 32px;">
+					<div class="hero-content d-flex justify-content-between" style="background-image: url(res/assets/img/photos/cover/keeper.jpg); ">
+						<div class="transparent-gradient" id="keeper-hero-text" style="padding: 32px; min-height: 480px; display: flex;
+    -webkit-flex-wrap: wrap; flex-wrap: wrap; -webkit-align-content: center; align-content: space-between;">
+							<h1>
+                Comienza a
+                <br>
+                cambiar tu vida.
+              </h1>
 						</div>
-						<div class="col-lg-4" style="background: ;">
-							<div class="tarjeta">
-                <h3>Descubre cuanto puedes ganar mensualmente<span>.</span></h3>
-                <form>
-                  <label for="days">¿Cuántos días a la semana puedes trabajar?</label>
-                  <select name="days" id="days" class="select-style" onchange="income()">
-                    <option value="1">1 día</option>
-                    <option value="2">2 días</option>
-                    <option value="3">3 días</option>
-                    <option value="4">4 días</option>
-                    <option value="5" selected>5 días</option>
-                    <option value="6">6 días</option>
-                    <option value="7">7 días</option>
-                  </select>
-                  <label for="hours">¿Cuántas horas por día puedes trabajar?</label>
-                  <select name="hours" id="hours" class="select-style" onchange="income()">
-                    <option value="3">3 horas</option>
-                    <option value="4">4 horas</option>
-                    <option value="5">5 horas</option>
-                    <option value="6">6 horas</option>
-                    <option value="7">7 horas</option>
-                    <option value="8" selected>8 horas</option>
-                  </select>
-                  <p style="font-size: 60px;" class="font-black color-text-fucsia text-right" id="income">
-                    $11,840
-                  </p>
-                  <p style="font-size: 12px; margin-top: -16px;" class="color-text-disabled text-right">
-                    Posibles ingresos mensuales calculados con base en la ocupación total de tus horas disponibles con servicios exprés.
-                  </p>
-                  <p class="text-center">
-                    <a href="http://contenidos.cocojewel.com/jelp-mi-keepers">
-                      <button type="button" name="button" class="btn-cta cta-alt" onclick="mixpanel.track('Keepers register calculator')">Regístrate ahora</button>
-                    </a>
-                  </p>
-                </form>
-              </div>
-						</div>
-					</div>
-					<div class="row" style="margin-bottom: 60px;">
-						<div class="col-md">
-							<h3>¿Por qué unirse a Jelp Mi?</h3>
-							<p>
-								Somos la mejor plataforma de servicios de limpieza, encuentra miles de clientes en tu ciudad.
-							</p>
-						</div>
-						<div class="col-md">
-							<h3>Trabaja a tu ritmo.</h3>
-							<p>
-								Tu eliges tus días, horas y zonas de trabajo, así podrás trabajar sin descuidar lo más importante para ti.
-							</p>
-						</div>
-						<div class="col-md">
-							<h3>Estamos para ayudarte.</h3>
-							<p>
-								Existimos por y para ti, siempre podrás confiar en el equipo.
-							</p>
-						</div>
+            <div class="calculator" style="">
+              <h3>Descubre cuanto puedes ganar mensualmente<span>.</span></h3>
+              <form>
+                <label for="days">¿Cuántos días a la semana puedes trabajar?</label>
+                <select name="days" id="days" class="select-style" onchange="income()">
+                  <option value="1">1 día</option>
+                  <option value="2">2 días</option>
+                  <option value="3">3 días</option>
+                  <option value="4">4 días</option>
+                  <option value="5" selected>5 días</option>
+                  <option value="6">6 días</option>
+                  <option value="7">7 días</option>
+                </select>
+                <label for="hours">¿Cuántas horas por día puedes trabajar?</label>
+                <select name="hours" id="hours" class="select-style" onchange="income()">
+                  <option value="3">3 horas</option>
+                  <option value="4">4 horas</option>
+                  <option value="5">5 horas</option>
+                  <option value="6">6 horas</option>
+                  <option value="7">7 horas</option>
+                  <option value="8" selected>8 horas</option>
+                </select>
+                <p style="font-size: 60px;" class="font-black color-text-white text-center" id="income">
+                  $11,840
+                </p>
+                <p style="font-size: 12px; margin-top: -16px;" class="color-text-white">
+                  Posibles ingresos mensuales calculados con base en la ocupación total de tus horas disponibles con servicios exprés.
+                </p>
+                <p class="text-center">
+                  <a href="https://goo.gl/forms/uAZYiz7NljpSIN8f2">
+                    <button type="button" name="button" class="btn-cta cta-alt" onclick="mixpanel.track('Keepers register calculator')">Regístrate ahora</button>
+                  </a>
+                </p>
+            </div>
 					</div>
 				</div>
 			</div>
-		</div>
+     	<div class="row" style="margin-bottom: 20px;">
+				<div class="col-md-4 wow fadeInUp">
+					<div style="padding: 20px 0px;">
+						<img src="res/assets/icons/group.png" alt="Pagos seguros" style="width: 80px;">
+						<br><br>
+						<h3 class="font-black">¿Por qué unirse a JelpMi?</h3>
+						<p>
+							Somos la mejor plataforma de servicios de limpieza, encuentra miles de clientes en tu ciudad.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4 wow fadeInUp">
+					<div style="padding: 20px 0px;">
+						<img src="res/assets/icons/happy.png" alt="Pagos seguros" style="width: 80px;">
+						<br><br>
+						<h3 class="font-black">Trabaja a tu ritmo.</h3>
+						<p>
+							Tu eliges tus días, horas y zonas de trabajo, así podrás trabajar sin descuidar lo más importante para ti.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4 wow fadeInUp">
+					<div style="padding: 20px 0px;">
+						<img src="res/assets/icons/help.png" alt="Pagos seguros" style="width: 80px;">
+						<br><br>
+						<h3 class="font-black">Estamos para ayudarte.</h3>
+						<p>
+							Existimos por y para ti, siempre podrás confiar en el equipo.
+						</p>
+					</div>
+				</div>
+			</div>
+    </div>
 
-    <div class="container" style="margin-bottom: 40px;">
-      <div class="row" style="margin-bottom: 50px;">
+    <div class="container" style="">
+      <div class="row" style="margin-bottom: 32px;">
         <div class="col">
           <h2>Requisitos<span>.</span></h2>
           <p>
@@ -249,152 +260,64 @@
         </div>
       </div>
 
-      <div class="row" style="margin-bottom: 40px;">
-        <div class="col-md d-flex align-items-center">
-          <div class="d-flex info-item">
-            <div style="margin-right: 10px;">
-              <div class="bullet-big" style="background: #524C5B">
-                1
-              </div>
-            </div>
-            <div class="">
-              <h3>Asiste a la entrevista.</h3>
-              <p>
-                <a href="http://contenidos.cocojewel.com/jelp-mi-keepers" onclick="mixpanel.track('Keepers register steps')">Regístrate en linea</a>, o llama al centro de atención Jelp Mi en tu ciudad para agendar una entrevista y comenzar tu proceso con nosotros.
-              </p>
-              <p>
-                Ciudad de México
-                <br>
-								<a href="tel:70982559">
-									<b style="font-size: 30px;">7098-2559</b>
-								</a>
-              </p>
-              <p>
-                Guadalajara
-                <br>
-								<a href="tel:3323436162">
-                	<b style="font-size: 30px;">33-2343-6162</b>
-								</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md step-photo">
-          <div style="background-image: url('res/assets/img/photos/ph-capac-1.jpg'); background-size: cover; width: 100%; height: 400px;" class="wow fadeInUp">
-          </div>
-        </div>
-      </div>
-      <div class="row" style="margin-bottom: 40px;">
-        <div class="col-md step-photo">
-          <div style="background-image: url('res/assets/img/photos/ph-capac-2.jpg'); background-size: cover; width: 100%; height: 400px;" class="wow fadeInUp">
-          </div>
-        </div>
-        <div class="col-md d-flex align-items-center">
-          <div class="d-flex info-item">
-            <div class="" style="margin-right: 10px;">
-              <div class="bullet-big" style="background: #F223C6">
-                2
-              </div>
-            </div>
-            <div class="">
-              <h3>Realiza tu examen.</h3>
-              <p>
-                Para prestar tus servicios es muy importante que apruebes nuestra certificación de seguridad, podrás hacerlo en cualquiera de nuestros centros de atención al acudir a tu entrevista.
-                <br><br>
-                Esta certificación <b>no tiene ningún costo</b> y nos ayuda a garantizar la seguridad y confianza en tu relación con los clientes.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row" style="margin-bottom: 40px;">
-        <div class="col-md d-flex align-items-center">
-          <div class="d-flex info-item">
-            <div style="margin-right: 10px;">
-              <div class="bullet-big" style="background: #30AAF9">
-                3
-              </div>
-            </div>
-            <div class="">
-              <h3>Reune tu documentación.</h3>
-              <p>Una vez aprobado tu examen, deberás presentar.</p>
-              <ul>
-                <li>Acta de nacimiento.</li>
-                <li>Comprobante de domicilio.</li>
-                <li>Identificación oficial</li>
-                <li>Carta de antecedentes penales.</li>
-                <li>Dos fotografías infantiles.</li>
-                <li>Dos cartas de recomendación.</li>
-                <li>Cuenta bancaria</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md step-photo">
-          <div style="background-image: url('res/assets/img/photos/ph-girl-desk.jpg'); background-size: cover; width: 100%; height: 400px;" class="wow fadeInUp">
-          </div>
-        </div>
-      </div>
       <div class="row">
-        <div class="col-md step-photo">
-          <div style="background-image: url('res/assets/img/photos/ph-keeper-1.jpg'); background-size: cover; width: 100%; height: 400px;" class="wow fadeInUp">
-          </div>
-        </div>
-        <div class="col-md d-flex align-items-center">
-          <div class="d-flex info-item">
-            <div class="" style="margin-right: 10px;">
-              <div class="bullet-big" style="background: #9032c8">
-                4
-              </div>
-            </div>
-            <div class="">
-              <h3>Comienza a trabajar.</h3>
-              <p>
-                Una vez que hayas entregado tu documentación, comenzarás a recibir servicios y podrás trabajar de inmediato.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+				<div class="col-md-6 wow fadeInUp">
+					<div style="height: 320px; background: #E8E8E8; background-image: url(res/assets/img/photos/ph-capac-1.jpg); background-size: cover;">
+					</div>
+					<div style="padding: 20px 0px;">
+						<h2 class="font-black">1<span>.</span> Asiste a la entrevista<span>.</span></h2>
+						<p>
+							Llámanos y agenda una cita en el centro de atención Jelp Mi! en tu ciudades.
+              <br><br>
+              <b>Ciudab de México</b>  7098-2559
+              <br>
+              <b>Guadalajara</b> 33-2343-6162
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+					<div style="height: 320px; background: #E8E8E8; background-image: url(res/assets/img/photos/ph-puppy.jpg); background-size: cover;">
+					</div>
+					<div style="padding: 20px 0px;">
+						<h2 class="font-black">2 <span>.</span> Realiza tu examen<span>.</span></h2>
+						<p>
+							Para prestar tus servicios en la plataforma es muy importante que acredites nuestro examen psicométrico de seguridad.
+              <br><br>
+              Este proceso no tiene ningún costo y nos ayuda a mantener la calidad de nuestros servicios.
+						</p>
+					</div>
+				</div>
+			</div>
 
-    <div class="solid-10">
-      <div class="container" style="padding-top: 80px; padding-bottom: 40px;">
-        <div class="row" style="margin-bottom: 24px;">
-          <div class="col">
-            <h2>Tus beneficios<span>.</span></h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md step-photo">
-            <div class="d-flex align-items-center" style="margin-bottom: 20px;">
-              <img src="res/assets/img/logos/icon-seguro.png" alt="" style="margin-right: 20px; height: 80px;">
-              <h3>Seguro de gastos médicos.</h3>
-            </div>
-            <p>
-              Todos los keepers cuentan con un seguro de gastos médicos para cubrirte en todo momento durante tus servicios.
-            </p>
-          </div>
-          <div class="col-md">
-            <div class="d-flex align-items-center" style="margin-bottom: 20px;">
-              <img src="res/assets/img/logos/icon-horas.png" alt="" style="margin-right: 20px; height: 80px;">
-              <h3>Pago justo en tus servicios.</h3>
-            </div>
-            <p>
-              Todos los servicios se pagan por hora, nunca tendrás que preocuparte por jefes abusivos.
-            </p>
-          </div>
-          <div class="col-md">
-            <div class="d-flex align-items-center" style="margin-bottom: 20px;">
-              <img src="res/assets/img/logos/icon-pagos.png" alt="" style="margin-right: 20px; height: 80px;">
-              <h3>Depósitos semanales.</h3>
-            </div>
-            <p>
-              Trabaja con la certeza de que <b>siempre</b> recibiras tu dinero de manera segura en tu cuenta bancaria.
-            </p>
-          </div>
-        </div>
-      </div>
+      <div class="row">
+				<div class="col-md-6 wow fadeInUp">
+					<div style="height: 320px; background: #E8E8E8; background-image: url(res/assets/img/photos/ph-capac-1.jpg); background-size: cover;">
+					</div>
+					<div style="padding: 20px 0px;">
+						<h2 class="font-black">3<span>.</span> Reune tu documentación<span>.</span></h2>
+            <p>Una vez aprobado tu examen, deberás presentar.</p>
+            <ul>
+              <li>Acta de nacimiento.</li>
+              <li>Comprobante de domicilio.</li>
+              <li>Identificación oficial</li>
+              <li>Carta de antecedentes penales.</li>
+              <li>Dos fotografías infantiles.</li>
+              <li>Dos cartas de recomendación.</li>
+              <li>Cuenta bancaria</li>
+            </ul>
+					</div>
+				</div>
+				<div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+					<div style="height: 320px; background: #E8E8E8; background-image: url(res/assets/img/photos/ph-puppy.jpg); background-size: cover;">
+					</div>
+					<div style="padding: 20px 0px;">
+						<h2 class="font-black">4<span>.</span> Comienza a trabajar<span>.</span></h2>
+						<p>
+							Una vez que hayas entregado tu documentación, comenzarás a recibir servicios y podrás trabajar de inmediato.
+						</p>
+					</div>
+				</div>
+			</div>
     </div>
 
     <div class="solid-10">
@@ -450,9 +373,41 @@
             </div>
           </div>
         </div>
-      </div>
+        <div class="row" style="margin-bottom: 20px; margin-top: 60px;">
+					<div class="col-md-4 wow fadeInUp">
+						<div style="padding: 20px 0px;">
+							<img src="res/assets/icons/healtcare.png" alt="Pagos seguros" style="width: 80px;">
+							<br><br>
+							<h3 class="font-black">Seguro de gastos médicos.</h3>
+							<p>
+								Todos los keepers cuentan con un seguro de gastos médicos para cubrirte en todo momento durante tus servicios.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4 wow fadeInUp">
+						<div style="padding: 20px 0px;">
+							<img src="res/assets/icons/time.png" alt="Pagos seguros" style="width: 80px;">
+							<br><br>
+							<h3 class="font-black">Pago justo en tus servicios.</h3>
+							<p>
+								Todos los servicios se pagan por hora, nunca tendrás que preocuparte por jefes abusivos.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4 wow fadeInUp">
+						<div style="padding: 20px 0px;">
+							<img src="res/assets/icons/money.png" alt="Pagos seguros" style="width: 80px;">
+							<br><br>
+							<h3 class="font-black">Depósitos semanales.</h3>
+							<p>
+								Trabaja con la certeza de que siempre recibiras tu dinero de manera segura en tu cuenta bancaria.
+							</p>
+						</div>
+					</div>
+				</div>
+     	</div>
     </div>
-    
+
     <div class="container-fluid color-text-white" style="background: #7038F0;">
         <div class="row" style="min-height: 420px;">
           <div class="col-lg-7 d-flex justify-content-center align-items-center">
@@ -478,7 +433,7 @@
         <div class="row">
           <div class="col-md" id="footer-logo">
             <a href="index.html">
-              <img src="res/assets/brand/logo/silver.svg" height="45px" alt="Jelp Mi Logo">
+              <img src="res/assets/brand/logo/silver.svg" height="40px" alt="Jelp Mi Logo">
             </a>
           </div>
           <div class="col-md menu-column">
@@ -526,9 +481,9 @@
             </p>
           </div>
         </div>
-        <div class="row color-text-disabled" style="font-size: 14px;" id="contact-info">
+        <div class="row color-text-disabled" style="font-size: 12px;" id="contact-info">
           <div style="margin-top: 30px; border-bottom: 1px solid #f0f0f0; width: 100%;" class="d-flex justify-content-between">
-            <div>¿Necesitas más información? Llama en la CDMX al <a href="tel:70982559">7098-2559</a>. En Guadalajara al 2343-6162</div>
+            <div>¿Necesitas más información? Llama en la CDMX al <a href="tel:70982559">7098-2559</a>. En Guadalajara al <a href="tel:23436162">2343-6162</a>.</div>
             <div>
               <a href="https://www.facebook.com/Jelpmimx/" target="_blank">
                 <img src="res/assets/icons/facebook.svg" class="social-icon" alt="Facebook">
@@ -575,17 +530,26 @@
     <script type="text/javascript" src="res/js/keepers-calculator.js">
     </script>
 
-    <script type="text/javascript">
+
+   <script type="text/javascript">
       $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if (scroll >= 80) {
-          $("#navbar").addClass("navbar-scrolled");
-          console.log("Hola");
+          $("#navbar-desk").addClass("navbar-scrolled");
         }else {
-          $("#navbar").removeClass("navbar-scrolled");
+          $("#navbar-desk").removeClass("navbar-scrolled");
         }
       });
     </script>
-
+		<script type="text/javascript">
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 80) {
+          $("#navbar-desk").addClass("navbar-scrolled");
+        }else {
+          $("#navbar-desk").removeClass("navbar-scrolled");
+        }
+      });
+    </script>
   </body>
 </html>

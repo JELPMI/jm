@@ -119,6 +119,7 @@ p{
   border-top: 1px solid #F0F0F0;
   padding: 36px 0px;
   line-height: 36px;
+	color: #616472;
 }
 
 .footer-custom a{
@@ -145,25 +146,6 @@ p{
 .hero{
   background-image: url('../../../res/assets/img/header.png');
   height: 750px;
-}
-
-.btn-cta{
-  background-color: rgba(144, 50, 200, 1);
-  color: white;
-  font-size: 22px;
-  border-radius: 0px !important;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  padding: 16px 88px;
-  transition: background-color 1s ease;
-}
-
-.btn-cta:hover{
-  background-color: rgba(124, 15, 189, 1);
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-.btn-cta:focus{
-  outline:0;
 }
 
 .btn-alt{
@@ -403,3 +385,5 @@ input[type="text"]:focus{
 .menu-item-main {
 	color: #f0f0f0; margin: 12px 0px; font-size: 24px; 
 }
+
+
